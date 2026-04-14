@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@200..800&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  --font-karla: 'Karla' , sans-serif;
+
+  --color-gray-900: #2a4144;
+  --color-gray-500: #86a2a5;
+  --color-green-600: #0c7d69;
+  --color-green-200: #e0f1e8;
+  --color-red-500: #d73c3c;
+
+
+}
+
+@utility th {
+  @apply font-karla text-[32px] leading-[100%] tracking-[-1px] font-bold
+}
+@utility tbmb {
+  @apply font-karla text-[18px] leading-[150%] font-bold
+}
+@utility tbmr {
+  @apply font-karla text-[18px] leading-[150%] 
+}
+@utility tbsm {
+  @apply font-karla text-[16px] leading-[150%] 
+}
