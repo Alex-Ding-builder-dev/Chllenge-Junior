@@ -1,0 +1,55 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap');
+
+
+@import "tailwindcss";
+
+@theme {
+
+  --color-grey-200: #D8D8D8;
+  --color-blue-100: #E5EAF1;
+  --color-blue-50: #F6FAFF;
+
+
+  --font-josefin: "Josefin Sans", sans-serif;
+  --font-alata: "Alata", sans-serif;
+
+  --breakpoint-lg: 90rem;
+}
+
+
+@utility text-preset-1 {
+  @apply font-josefin font-light text-[72px] leading-[100%] tracking-[0px];
+}
+
+@utility text-preset-2 {
+  @apply font-josefin font-light text-[48px] leading-[100%] tracking-[0px];
+}
+
+@utility text-preset-3 {
+  @apply font-josefin font-light text-[40px] leading-[100%] tracking-[0px];
+}
+
+@utility t3-1 {
+  @apply font-josefin font-light text-[clamp(40px,_8.1425vw_+_9.4656px,_72px)] leading-[100%] tracking-[0px];
+}
+
+@utility text-preset-4 {
+  @apply font-josefin font-light text-[32px] leading-[100%] tracking-[0px];
+}
+
+@utility t4-2 {
+  @apply font-josefin font-light text-[clamp(32px,_4.0712vw_+_16.7328px,_48px)] leading-[100%] tracking-[0px];
+}
+
+@utility text-preset-5 {
+  @apply font-josefin font-light text-[24px] leading-[100%] tracking-[0px];
+}
+
+@utility text-preset-6 {
+  @apply font-alata font-normal text-[15px] leading-[165%] tracking-[0px];
+}
+
+@utility text-preset-7 {
+  @apply font-alata font-normal text-[14px] leading-[100%] tracking-[5px];
+}
