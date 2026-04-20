@@ -4,10 +4,11 @@ import SignUp from "../pages/SignUp"
 
 export default function App() {
   return (
-    <BrowserRouter basename="/officelite-coming-soon-page/result/index.html">
+    <BrowserRouter basename="/officelite-coming-soon-page/result">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/signup" element={<SignUp />} />
+        <Route path="*" element={<Home />} />
       </Routes>
     </BrowserRouter>
   )
