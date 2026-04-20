@@ -1,0 +1,62 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+
+@import "tailwindcss";
+
+@theme {
+
+  --font-kumbh: "Kumbh Sans", sans-serif;
+
+
+  --color-neutral-900: #25293A;
+  --color-neutral-800: #333950;
+  --color-neutral-500: #747B95;
+  --color-neutral-50: #FAFAFA;
+  --color-neutral-0: #FFFFFF;
+
+
+  --color-blue-500: #5175FF;
+  --color-blue-300: #829CFF;
+  --color-blue-100: #E4EAFF;
+
+
+  --color-red-400: #F05B5B;
+
+  --shadow-button: 0 25px 25px -10px rgba(63, 91, 194, 0.2472);
+  --shadow-card: 0 50px 50px -25px rgba(75, 92, 154, 0.24);
+
+  --breakpoint-lg: 90rem;
+}
+
+
+@utility text-preset-1 {
+
+  @apply font-kumbh font-bold text-[40px] leading-[1.2] md:text-[56px];
+}
+
+@utility text-preset-2 {
+  @apply font-kumbh font-bold text-[20px] leading-[1.4];
+}
+
+@utility text-preset-3 {
+
+  @apply font-kumbh font-normal text-[18px] leading-[1.5];
+}
+
+@utility text-preset-4 {
+  @apply font-kumbh font-normal text-[16px] leading-[1.6];
+}
+
+@utility text-preset-5 {
+  @apply font-kumbh font-bold text-[16px] leading-[1.6];
+}
+
+@utility text-preset-6 {
+
+  @apply font-kumbh font-bold text-[16px] leading-[1.6] tracking-[5px] uppercase;
+}
+
+@utility form-t-1 {
+  @apply font-kumbh font-normal text-[16px] leading-[28px] text-neutral-500/70;
+}
