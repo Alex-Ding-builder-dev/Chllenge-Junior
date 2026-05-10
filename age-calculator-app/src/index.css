@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;0,800;1,400;1,800&display=swap");
+
+@import "tailwindcss";
+
+@theme {
+  --font-poppins: "Poppins", sans-serif;
+
+  --color-white: #ffffff;
+  --color-black: #000000;
+
+  --color-grey-500: #716f6f;
+  --color-grey-200: #dcdcdc;
+  --color-grey-100: #f0f0f0;
+
+  --color-red-400: #ff5959;
+  --color-purple-500: #854dff;
+
+  --breakpoint-lg: 90rem;
+}
+
+@utility text-preset-1 {
+  @apply font-poppins text-[104px] leading-[110%] tracking-[-2px] font-extrabold italic;
+}
+
+@utility text-preset-2 {
+  @apply font-poppins text-[56px] leading-[110%] tracking-[-2px] font-extrabold italic;
+}
+
+@utility t2-1 {
+  @apply font-poppins text-[clamp(56px,_12.2137vw_+_10.1985px,_104px)] leading-[110%] tracking-[-2px] font-extrabold italic;
+}
+
+
+@utility text-preset-3 {
+  @apply font-poppins text-[32px] leading-[150%] tracking-[0px] font-bold;
+}
+
+@utility text-preset-4 {
+  @apply font-poppins text-[20px] leading-[150%] tracking-[0px] font-bold;
+}
+
+@utility t4-3 {
+  @apply font-poppins text-[clamp(20px,_3.0534vw_+_8.5496px,_32px)] leading-[150%] tracking-[0px] font-bold;
+}
+
+@utility text-preset-5-bold {
+  @apply font-poppins text-[14px] leading-[150%] tracking-[5px] font-bold uppercase;
+}
+
+@utility text-preset-5-italic {
+  @apply font-poppins text-[14px] leading-[150%] tracking-[0px] italic;
+}
+
+@utility text-preset-6-bold {
+  @apply font-poppins text-[12px] leading-[150%] tracking-[4px] font-bold uppercase;
+}
+
+@utility t6-5b {
+  @apply font-poppins text-[clamp(12px,_0.5089vw_+_10.0916px,_14px)] leading-[150%] tracking-[clamp(4px,_0.2545vw_+_3.0458px,_5px)] font-bold uppercase;
+}
+
+@utility text-preset-6-italic {
+  @apply font-poppins text-[12px] leading-[150%] tracking-[0px] italic;
+}
+@utility t6-5i {
+  @apply font-poppins text-[clamp(12px,_0.5089vw_+_10.0916px,_14px)] leading-[150%] tracking-[0px] italic;
+}
