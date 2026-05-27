@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import "tailwindcss";
+@theme {
+  --font-dm-sans: 'DM Sans', sans-serif;
+
+  --color-purple-100: #dbd1fc;
+  --color-purple-500: #7551dc;
+  --color-yellow-100: #f9eee2;
+  --color-yellow-500: #ffcc6a;
+  --color-white: #ffffff;
+  --color-black: #121212;
+
+  --radius-card: 0.625rem;
+
+  --breakpoint-lg: 90rem;
+
+}
+
+@utility text-preset-1 {
+  @apply font-medium text-[clamp(2.875rem,_2.5445vw_+_2.2786rem,_3.5rem)] leading-[clamp(2.625rem,_1.5267vw_+_2.2672rem,_3rem)] 
+  tracking-[-0.04em] 
+  md:text-[clamp(3.375rem,_1.1905vw_+_2.8036rem,_3.875rem)]
+  md:leading-[clamp(3rem,_1.4881vw_+_2.2857rem,_3.625rem)]
+  lg:tracking-[-0.1875rem]
+}
+
+@utility text-preset-2 {
+  @apply font-medium text-[clamp(2rem,_1.0178vw_+_1.7615rem,_2.25rem)] leading-[clamp(1.75rem,_0.5089vw_+_1.6307rem,_1.875rem)]
+  tracking-[-0.06em]
+  md:text-[clamp(2.25rem,_0.5952vw_+_1.9643rem,_2.5rem)]
+  md:leading-[clamp(1.875rem,_0.8929vw_+_1.4464rem,_2.25rem)]
+  lg:tracking-[-0.125rem]
+}
+
+@utility text-preset-3 {
+  @apply font-medium text-[clamp(1.75rem,_1.0178vw_+_1.5115rem,_2rem)] leading-[clamp(1.625rem,_0.5089vw_+_1.5057rem,_1.75rem)]
+  tracking-[-0.06em]
+  md:text-[clamp(1.75rem,_0.5952vw_+_1.4643rem,_2rem)]
+  md:leading-[clamp(1.625rem,_0.2976vw_+_1.4821rem,_1.75rem)]
+  lg:tracking-[-0.125rem]
+}
+
+@utility text-preset-4 {
+  @apply font-normal text-[1.125rem] leading-[1.25rem] tracking-normal
+}
