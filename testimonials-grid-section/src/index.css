@@ -1,0 +1,50 @@
+
+@import "tailwindcss";
+
+@theme {
+  --font-barlow: "Barlow Semi Condensed", sans-serif;
+
+  --color-white: #ffffff;
+  --color-black: #121212;
+
+  --color-grey-100: #e7eaee;
+  --color-grey-200: #cfcfcf;
+  --color-grey-300: rgba(163, 170, 180, 1);
+  --color-grey-400: #676d7e;
+  --color-grey-500: #48556a;
+  --color-purple-50: #ede4ff;
+  --color-purple-300: #a775f1;
+  --color-purple-500: #733fc8;
+  --color-dark-blue: #19202d;
+  --color-bg: #f6f5f6;
+  
+  --radius-card: 0.5rem;
+
+  --shadow-card:
+    0 10px 18px -14px rgb(72 85 106 / 0.18),
+    40px 60px 48px -28px rgb(72 85 106 / 0.26);
+
+  --breakpoint-lg: 90rem;
+}
+
+@utility text-preset-1 {
+  @apply font-barlow font-semibold text-[1.25rem] leading-[1.2] tracking-normal;
+}
+
+@utility text-preset-2 {
+  @apply font-barlow font-medium text-[0.8125rem] leading-[1.1] tracking-normal;
+}
+
+@utility text-preset-3 {
+  @apply font-barlow font-medium text-[0.8125rem] leading-[1.4] tracking-normal;
+}
+
+@utility text-preset-4 {
+  @apply font-barlow font-medium text-[0.6875rem] leading-[1.1] tracking-normal;
+}
+
+@utility page-shell {
+  @apply px-[clamp(2.1875rem,_calc(6.3613vw_+_0.6966rem),_3.75rem)] pt-[clamp(4.5625rem,_calc(2.5445vw_+_3.9661rem),_5.1875rem)]
+  pb-[clamp(4.5625rem,_calc(10.1781vw_+_2.177rem),_7.0625rem)]
+  lg:pt-[14.3125rem] lg:pb-[13.625rem]
+}
