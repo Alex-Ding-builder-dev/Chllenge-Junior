@@ -8,9 +8,11 @@ export default function Header() {
     return (
         <header className="px-[clamp(16px,_4.0712vw_+_0.7328px,_32px)] pt-[clamp(24px,_2.0356vw_+_16.3664px,_32px)] pb-20
         bg-neutral-100">
-                <img src={logo} alt="tech book club brand logo" 
-                className="mb-[clamp(48px,_4.0712vw_+_32.7328px,_64px)]"/>
-                <section>
+                <div className="center">
+                    <img src={logo} alt="tech book club brand logo"
+                    className="mb-[clamp(48px,_4.0712vw_+_32.7328px,_64px)]"/>
+                </div>
+                <section className="center lg:flex lg:items-center lg:gap-16">
 
                     <div>
                         <h1 className="t1m-1 text-transparent bg-clip-text bg-text-gradient mb-6">Join the ultimate tech book club</h1>
@@ -19,12 +21,13 @@ export default function Header() {
                         <Review position="header" />
                     </div>
 
-                    <picture>
+                    <picture className=" lg:shrink-0">
                         <source srcSet={heroDesktop} media="(min-width: 1440px)" />
                         <source srcSet={heroTablet} media="(min-width: 768px)" />
                         <img src={heroMobile} alt="tech book club hero image"
                         className="rounded-[clamp(6px,_1.5267vw_+_0.2748px,_12px)] w-[clamp(343px,_91.8575vw_-_1.4656px,_704px)]
                          h-[clamp(384.92px,_103.084vw_-_1.6449px,_790.04px)] object-cover object-left
+                         lg:h-[37.875rem] lg:w-[33.75rem]
                          " />
                     </picture>
                 </section>

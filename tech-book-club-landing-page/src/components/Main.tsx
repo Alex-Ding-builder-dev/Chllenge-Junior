@@ -12,7 +12,8 @@ export default function Main() {
     return (
         <main className="px-[clamp(16px,_4.0712vw_+_0.7328px,_32px)] py-[clamp(64px,_4.0712vw_+_48.7328px,_80px)]">
             <section className="mb-[clamp(64px,_4.0712vw_+_48.7328px,_80px)]">
-                <div className="mb-[clamp(64px,_4.0712vw_+_48.7328px,_80px)]">
+                <div className="mb-[clamp(64px,_4.0712vw_+_48.7328px,_80px)] center
+                lg:flex lg:flex-row-reverse lg:items-center lg:gap-20">
                     <div>
                         <h2 className="text-preset-2-mobile text-[clamp(34px,_4.0712vw_+_18.7328px,_50px)]
                         text-neutral-900 mb-[clamp(24px,_2.5445vw_+_14.458px,_34px)]">Read together,
@@ -37,39 +38,46 @@ export default function Main() {
                             </li>
                         </ul>
                     </div>
-                    <picture>
+                    <picture className="lg:shrink-0">
                         <source srcSet={readTogetherTablet} media="(min-width: 768px)" />
                         <source srcSet={readTogetherDesktop} media="(min-width: 1440px)" />
                         <img src={readTogetherMobile} alt="read together image"
                         className="rounded-[clamp(16px,_1.5267vw_+_10.2748px,_22px)] w-[clamp(343px,_91.8575vw_-_1.4656px,_704px)]
-                        h-[clamp(318.5px,_85.2952vw_-_1.3569px,_653.71px)] object-cover object-left" />
+                        h-[clamp(318.5px,_85.2952vw_-_1.3569px,_653.71px)] object-cover object-left
+                        lg:w-[35rem] lg:h-[32.5rem]" />
                     </picture>
                 </div>
-                <div className="relative">
+                <div className="relative center
+                lg:flex lg:items-center lg:gap-20">
                     <div className="mb-10">
                         <h2 className="text-preset-2 text-neutral-900 text-[clamp(34px,_4.0712vw_+_18.7328px,_50px)]
                         mb-6">Not your average book club</h2>
                         <p className="text-preset-5 text-neutral-700">Connect with a community that speaks your language - from Python to TypeScript and everything in between. Our discussions blend technical depth with practical applications.</p>
                     </div>
-                    <picture>
+                    <picture className="lg:shrink-0">
                         <source srcSet={notAverageTablet} media="(min-width: 768px)" />
                         <source srcSet={notAverageDesktop} media="(min-width: 1440px)" />
                         <img src={notAverageMobile} alt="not average image"
                         className="rounded-[clamp(16px,_1.5267vw_+_10.2748px,_22px)] w-[clamp(343px,_91.8575vw_-_1.4656px,_704px)]
-                        h-[clamp(318.5px,_85.2952vw_-_1.3569px,_653.71px)] object-cover object-left" />
+                        h-[clamp(318.5px,_85.2952vw_-_1.3569px,_653.71px)] object-cover object-left
+                        lg:w-[35rem] lg:h-[32.5rem]" />
                     </picture>
                     <img src={logos} alt="tech logos"
-                    className="hidden md:block absolute bottom-[50.47px] right-[50.44px]" />
+                    className="hidden md:block absolute bottom-[50.47px] right-[50.44px]
+                    lg:right-[32.5rem] lg:bottom-[1.9375rem]" />
                 </div>
             </section>
 
             <section className="bg-neutral-100 py-[clamp(64px,_4.0712vw_+_48.7328px,_80px)]
             px-[clamp(16px,_4.0712vw_+_0.7328px,_32px)] rounded-[12px]
-            mb-[clamp(64px,_4.0712vw_+_48.7328px,_80px)]">
+            mb-[clamp(64px,_4.0712vw_+_48.7328px,_80px)] center
+            lg:flex lg:flex-col lg:items-center lg:px-15">
                 <h2 className="text-preset-2 text-neutral-900 text-[clamp(34px,_4.0712vw_+_18.7328px,_50px)]
-                mb-[clamp(32px,_4.0712vw_+_16.7328px,_48px)]">Your tech reading journey</h2>
+                mb-[clamp(32px,_4.0712vw_+_16.7328px,_48px)]
+                lg:text-center lg:w-[512px] lg:mb-16">Your tech reading journey</h2>
                 <ol className="text-preset-6-mobile text-neutral-900 text-[clamp(16px,_0.5089vw_+_14.0916px,_18px)]
-                flex flex-col gap-[clamp(32px,_2.0356vw_+_24.3664px,_40px)]">
+                flex flex-col gap-[clamp(32px,_2.0356vw_+_24.3664px,_40px)]
+                lg:flex-row">
                     <li className="flex flex-col gap-[clamp(20px,_1.0178vw_+_16.1832px,_24px)]">
                         <div className="border-2 rounded-[4px] w-[clamp(32px,_2.0356vw_+_24.3664px,_40px)]
                         h-[clamp(32px,_2.0356vw_+_24.3664px,_40px)] grid place-items-center">1</div>
@@ -93,17 +101,20 @@ export default function Main() {
                 </ol>
             </section>
 
-            <section className="mb-[clamp(64px,_4.0712vw_+_48.7328px,_80px)]">
+            <section className="mb-[clamp(64px,_4.0712vw_+_48.7328px,_80px)] center
+            lg:flex lg:flex-col lg:items-center">
                 <h2 className="text-preset-2 text-neutral-900 text-[clamp(34px,_4.0712vw_+_18.7328px,_50px)]
                 mb-[clamp(24px,_4.0712vw_+_8.7328px,_40px)]">Membership options</h2>
-                <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
+                <div className="grid grid-cols-1 gap-6 md:grid-cols-2
+                lg:grid-cols-[repeat(3,auto)] lg:place-items-center">
                     <PriceCard tier="starter" />
                     <PriceCard tier="pro" />
                     <PriceCard tier="enterprise" />
                 </div>
             </section>
 
-            <figure>
+            <figure className="center lg:px-14
+            lg:flex lg:flex-col lg:items-center lg:text-center lg:gap-8">
                 <FiveStar />
                 <blockquote className="mt-8 text-preset-3-mobile text-neutral-900 text-[clamp(24px,_2.5445vw_+_14.458px,_34px)]
                 mb-8">

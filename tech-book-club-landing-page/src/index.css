@@ -17,6 +17,9 @@
 
   --background-image-text-gradient: linear-gradient(107deg, #FF9A60 -11.37%, #062630 61.84%);
   --background-image-custom-gradient: linear-gradient(90deg, #FFE2D1 0%, #FFF5EF 100%);
+  --background-image-hover-gradient: linear-gradient(90deg, var(--color-neutral-700) 0%, var(--color-neutral-900) 100%);
+
+  --breakpoint-lg: 90rem;
 }
 
 @utility text-preset-1 {
@@ -73,4 +76,8 @@
 
 @utility text-preset-7 {
   @apply font-martian font-normal text-[14px] leading-[120%] tracking-[-1px];
+}
+
+@utility center {
+  @apply lg:max-w-[73.375rem] lg:mx-auto;
 }
