@@ -8,7 +8,7 @@ export default function App() {
     <div className="bg-bg min-h-dvh page-shell">
       <h1 className="sr-only">Testimonials</h1>
       <main className="max-w-[40.4375rem] mx-auto lg:max-w-[69.625rem]
-      grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+      grid gap-8 md:grid-cols-2 lg:grid-cols-4 lg:gap-y-6">
         <article className="bg-purple-500 shadow-card rounded-card text-white
         md:col-span-2 p-8 space-y-4
         md:bg-[url('../public/images/bg-pattern-quotation.svg')] md:bg-no-repeat md:bg-position-[top_right_10.25rem] lg:bg-position-[top_right_3.75rem]">
