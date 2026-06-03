@@ -1,0 +1,86 @@
+@import "tailwindcss";
+@theme {
+  --breakpoint-lg: 90rem;
+
+  --font-big-shoulders: "Big Shoulders", sans-serif;
+  --font-outfit: "Outfit", sans-serif;
+
+  --color-grey-900: #151515;
+  --color-grey-700: #444444;
+  --color-white: #FFFFFF;
+  --color-gold-500: #d5966c;
+
+  --background-image-clipText: linear-gradient(to right, white 285.5px, var(--color-grey-900) 166px);
+  --background-image-header: linear-gradient(to left, white 50%, var(--color-grey-900) 50%);
+}
+
+@utility text-h1 {
+  @apply font-big-shoulders font-black text-[clamp(3.75rem,_calc(2.5445vw_+_3.1536rem),_4.375rem)]
+  leading-[0.9] text-grey-900
+  md:text-[clamp(4.375rem,_calc(3.869vw_+_2.5179rem),_6rem)] lg:text-transparent lg:bg-clip-text lg:bg-clipText
+}
+
+@utility text-header-p {
+  @apply font-outfit font-light text-[1.125rem] leading-[1.4] text-grey-700
+  md:text-[clamp(1.125rem,_calc(0.5952vw_+_0.8393rem),_1.375rem)]
+}
+
+@utility text-button {
+  @apply font-big-shoulders font-extrabold text-[1.25rem] leading-none tracking-[3.64px] text-white
+}
+
+@utility text-h2 {
+  @apply font-big-shoulders font-black text-[3.125rem] leading-[0.9]
+  md:text-[clamp(3.125rem,_calc(1.4881vw_+_2.4107rem),_3.75rem)] md:leading-[clamp(90%,calc(78.5714%+1.4881vw),100%)]
+}
+
+@utility text-p {
+  @apply font-outfit font-light text-[1.125rem] leading-[1.4]
+  md:text-[clamp(1.125rem,_calc(0.5952vw_+_0.8393rem),_1.375rem)]
+}
+
+@utility location-h1 {
+  @apply font-big-shoulders font-black text-[3.4375rem] leading-[0.9] text-white
+  md:text-[clamp(3.4375rem,_calc(2.2321vw_+_2.3661rem),_4.375rem)] md:leading-[clamp(90%,calc(78.5714%+1.4881vw),100%)]
+}
+
+@utility location-h2 {
+  @apply font-big-shoulders font-black text-[2.25rem] leading-none text-gold-500
+}
+
+@utility center {
+  @apply max-w-[69.375rem] mx-auto;
+}
+
+@utility home-main-box {
+  @apply px-[clamp(1rem,_calc(5.9796vw_-_0.4015rem),_2.4688rem)]
+  py-[clamp(6.25rem,_calc(5.0891vw_+_5.0573rem),_7.5rem)]
+  md:px-[clamp(2.4688rem,_calc(18.6756vw_-_6.4955rem),_10.3125rem)]
+  md:py-[clamp(7.5rem,_calc(8.9286vw_+_3.2143rem),_11.25rem)]
+}
+
+@utility home-footer-box {
+  @apply px-10 pt-12 pb-[clamp(3rem,_calc(3.0534vw_+_2.2844rem),_3.75rem)]
+  md:px-[clamp(2.5rem,_calc(18.6012vw_-_6.4286rem),_10.3125rem)]
+  md:pt-[clamp(3rem,_calc(4.7619vw_+_0.7143rem),_5rem)]
+  md:pb-[clamp(3.75rem,_calc(4.3155vw_+_1.6786rem),_5.5625rem)]
+}
+
+@utility map-header-shell {
+  @apply py-[clamp(0.625rem,_calc(1.5267vw_+_0.2672rem),_1rem)]
+  px-[clamp(0.625rem,_calc(7.3791vw_-_1.1045rem),_2.4375rem)]
+  md:px-[clamp(2.4375rem,_calc(17.4107vw_-_5.9196rem),_9.75rem)]
+}
+
+@utility map-main-box {
+  @apply px-[clamp(1rem,_calc(6.1069vw_-_0.4313rem),_2.5rem)] py-20
+  md:px-[clamp(2.5rem,_calc(18.6012vw_-_6.4286rem),_10.3125rem)]
+  md:py-[clamp(5rem,_calc(7.4405vw_+_1.4286rem),_8.125rem)]
+}
+
+@utility map-footer-box {
+  @apply px-[clamp(1rem,_calc(6.1069vw_-_0.4313rem),_2.5rem)] py-12
+  md:px-[clamp(2.5rem,_calc(18.6012vw_-_6.4286rem),_10.3125rem)]
+  md:py-[clamp(3rem,_calc(4.7619vw_+_0.7143rem),_5rem)]
+
+}
